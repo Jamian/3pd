@@ -1,0 +1,3 @@
+# Please Pin Project Dependencies (3PD)
+
+3PD is a tool for validating that dependency definitions, package management files - things like `requirements.txt` or `package.json` contain exact versions. The goal here is to enforce pinning of versions early on in the CICD pipeline to ensure that systems are not left quite so vulnerable to library hijacking. This is not always the _right_ solution, but if paired with other tools such as caching (JFrog Artefactory, AWS CodeArtefact) of known and due diligence tested versions it can help provide a little more confidence. No matter how many tools are employed, if the due diligence is not performed on all dependencies and their versions - there will always be more potential for malicious code to enter your technology eco system.
